@@ -4,7 +4,6 @@ import PackageDescription
 let package = Package(
     name: "SkynetIntelligence",
     platforms: [
-        .iOS(.v12),  // Specify your supported platforms
         .macOS(.v10_15)
     ],
     products: [
