@@ -20,8 +20,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SkynetIntelligence",
-            url: "https://github.com/yourusername/yourrepository/releases/download/v1.0.0/SkynetIntelligence.zip",
-            checksum: "yourchecksumhere"  // Replace with the actual checksum of your .zip file
+            url: "https://github.com/monish-instinct/SkynetIntelligenceTest/releases/download/swift/BlogKit.xcframework.zip",
+            checksum: "74aae5bf421d97ffcb7358ab50195f4d8792c9ea0a3136cead5c5f6144d5787e"  // Replace with the actual checksum of your .zip file
         ),
         .target(
             name: "SkynetIntelligenceTarget",
