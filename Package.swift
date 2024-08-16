@@ -13,14 +13,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // Add your SQLCipher dependency here
         .package(url: "https://github.com/stoneburner/SQLCipher.git", from: "0.0.4")
     ],
     targets: [
         .binaryTarget(
             name: "SkynetIntelligence",
-            url: "https://github.com/monish-instinct/SkynetIntelligenceTest/releases/download/swift/BlogKit.xcframework.zip",
-            checksum: "74aae5bf421d97ffcb7358ab50195f4d8792c9ea0a3136cead5c5f6144d5787e"  // Replace with the actual checksum of your .zip file
+            url: "https://github.com/monish-instinct/SkynetIntelligenceTest/releases/download/swift/SkynetIntelligence.xcframework.zip",
+            checksum: "74aae5bf421d97ffcb7358ab50195f4d8792c9ea0a3136cead5c5f6144d5787e"
         ),
         .target(
             name: "SkynetIntelligenceTarget",
@@ -28,7 +27,7 @@ let package = Package(
                 "SkynetIntelligence",
                 .product(name: "SQLCipher", package: "SQLCipher")
             ],
-            path: "Sources"
+            path: "Sources/SkynetIntelligenceTarget"  // Adjust based on actual path
         )
     ]
 )
